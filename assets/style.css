@@ -1,0 +1,1059 @@
+@charset "UTF-8";
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.bg-orange {
+  background-color: #ff7c08;
+}
+
+.txt-orange {
+  color: #ff7c08;
+}
+
+.bg-dark-blue {
+  background-color: #231f40;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-contacts:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: skewX(-30deg);
+  background-color: #ff7c08;
+}
+
+.contact a {
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.contact i {
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.contact:hover a {
+  color: #231f40;
+}
+.contact:hover i {
+  color: #231f40;
+}
+
+.social-icons {
+  color: #fff;
+}
+.social-icons .circle-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ff7c08;
+}
+.social-icons .circle-icon:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.social-icons .circle-icon:hover i {
+  color: #ff7c08;
+}
+
+.navbar {
+  font-weight: 600;
+  color: #231f40;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.navbar .navbar-brand img {
+  height: 2.5rem;
+}
+.navbar .fa-chevron-down {
+  font-size: 0.75rem;
+  margin-left: 0.125rem;
+}
+.navbar .active:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ff7c08;
+  bottom: -5px;
+  left: 0;
+}
+.navbar .nav-item:hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ff7c08;
+  bottom: -5px;
+  left: 0;
+}
+.navbar .nav-item {
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.1s ease-in;
+}
+.navbar .nav-item:hover {
+  color: #ff7c08;
+}
+.navbar .navbar-toggler {
+  background-color: #ff7c08;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar .custom-number-circle {
+  font-size: 0.75rem;
+  color: white;
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ff7c08;
+  border: 1px solid white;
+}
+.navbar .icon-circle {
+  background-color: rgba(255, 124, 8, 0.1490196078);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.navbar .icon-circle:hover {
+  background-color: #ff7c08;
+  cursor: pointer;
+}
+.navbar .icon-circle:hover i {
+  color: white;
+}
+
+header {
+  height: auto;
+}
+header h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+header p {
+  font-size: 18px;
+}
+header .bg-img1 {
+  background-image: url("https://html.themefax.com/regfood/images/banner_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+header .bg-img1 .overlay {
+  background-color: rgba(35, 31, 64, 0.768627451);
+  height: 100%;
+}
+header .bg-img1 .overlay .hero-shape-1 {
+  top: 40px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  animation: rotating 50s linear infinite;
+}
+header .bg-img1 .overlay .hero-shape-2 {
+  top: 500px;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  animation: scaling 4s linear infinite;
+}
+header .bg-img1 .overlay .hero-shape-3 {
+  top: 40px;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  animation: scaling 4s linear infinite;
+}
+header .bg-img1 .overlay .hero-shape-4 {
+  top: 560px;
+  left: 25%;
+  width: 45px;
+  height: 45px;
+  animation: moving 4s linear infinite;
+}
+header .bg-img1 .overlay .hero-shape-5 {
+  top: 550px;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  animation: rotating 50s linear infinite;
+}
+header .bg-img1 .overlay .hero-shape-6 {
+  top: 40px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  animation: moving 50s linear infinite;
+}
+header .bg-img1 .search-form {
+  background-color: white;
+  color: #555;
+  border-radius: 50px;
+  padding: 0.5rem;
+}
+header .bg-img1 .search-form .search-wrap {
+  border: 1px solid #bbb;
+  margin: 0;
+  border-radius: 50px;
+  padding: 0.5rem;
+}
+header .bg-img1 .search-form .search-button {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  background-color: #ff7c08;
+  color: white;
+  transition: padding 0.4s ease-in-out;
+  position: relative;
+}
+header .bg-img1 .search-form .search-button:hover {
+  background-color: #231f40 !important;
+  padding: 12px 20px 12px 64px;
+}
+header .bg-img1 .search-form .search-button:hover::before {
+  opacity: 1;
+  left: 1.5rem;
+}
+header .bg-img1 .search-form .search-button::before {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 24px;
+  background: url(https://html.themefax.com/regfood/images/arrow_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  transition: all 0.4s ease-in-out;
+}
+header .bg-img1 .search-form .search-input {
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  color: inherit;
+  border: none;
+  border-radius: inherit;
+}
+header .bg-img1 .search-form .search-input:focus {
+  outline: none;
+}
+header .bg-img1 .search-form input[type=search]::placeholder {
+  color: #bbb;
+}
+header .bg-img1 .img-border {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+  width: 100%;
+  max-width: 546px;
+  height: 100%;
+  animation: rotating 120s linear infinite;
+}
+header .bg-img1 .img-hero {
+  border-radius: 50%;
+  border: 1.5rem solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  width: 546px;
+  display: block;
+}
+header .bg-img1 .discount-circle {
+  z-index: 11;
+  top: 0;
+  left: 5rem;
+  background-color: #ff7c08;
+  border: 2px solid white;
+  width: 8rem;
+  height: 8rem;
+}
+header .bg-img1 .discount-circle h3 {
+  font-size: 35px;
+  margin: 0;
+}
+header h3 {
+  font-family: "Oleo Script", cursive;
+}
+
+main .bg-blue {
+  background-color: #eaf0f5;
+}
+main h3 {
+  font-family: "Oleo Script", cursive;
+  color: #ff7c08;
+}
+main h2 {
+  font-family: "Barlow", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #231f40;
+}
+main h4 {
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+main h4:hover {
+  cursor: pointer;
+  color: #ff7c08;
+}
+main .offer-card {
+  border-radius: 8px;
+}
+main .icon-arrow {
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+main .fa-arrow-left {
+  background-color: #ff7c08;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+main .fa-arrow-left:hover {
+  background-color: #231f40;
+  cursor: pointer;
+}
+main .fa-arrow-right {
+  background-color: #231f40;
+  margin-left: 0.5rem;
+}
+main .fa-arrow-right:hover {
+  cursor: pointer;
+}
+main .bg-properties {
+  background-size: cover;
+  background-position: center;
+}
+main .offer-border {
+  border: 0.5rem solid white;
+  border-radius: 10px;
+}
+main .bg-img-offer {
+  background-image: url("https://html.themefax.com/regfood/images/offer_item_img2.jpg");
+}
+main .bg-img-offer-2 {
+  background-image: url("https://html.themefax.com/regfood/images/offer_item_img3.jpg");
+}
+main .bg-img-offer-3 {
+  background-image: url("https://html.themefax.com/regfood/images/offer_item_img1.jpg");
+}
+main .discount-icon {
+  background-color: #ff7c08;
+  border: 2px solid white;
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 15%;
+  left: 25%;
+}
+main .offer-card-icon {
+  background-color: #ff7c08;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+main .offer-card-icon:hover {
+  background-color: #231f40;
+  cursor: pointer;
+}
+main .reservation-bg-img {
+  background-image: url("https://html.themefax.com/regfood/images/reservation_bg.jpg");
+}
+main .reservation-card {
+  z-index: 1;
+  position: relative;
+  padding: 50px;
+}
+main .reservation-card h2 {
+  border-bottom: 1px solid white;
+  font-family: Barlow, sans-serif;
+  color: white;
+  margin-bottom: 25px;
+}
+main .confirm-btn {
+  width: 100%;
+  background-color: #231f40;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  transition: padding 0.4s ease-in-out;
+  position: relative;
+}
+main .confirm-btn:hover {
+  background-color: #231f40 !important;
+  padding: 12px 20px 12px 64px;
+}
+main .confirm-btn:hover::before {
+  opacity: 1;
+  left: 1.5rem;
+}
+main .confirm-btn::before {
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 24px;
+  background: url(https://html.themefax.com/regfood/images/arrow_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  transition: all 0.4s ease-in-out;
+}
+main form {
+  color: white;
+}
+main form .form-label {
+  font-weight: 600;
+}
+main form .form-control {
+  padding: 12px 20px;
+  width: 100%;
+}
+main .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+main .menu-btn-main {
+  background-color: #ff7c08;
+  color: white;
+  transition: background-color, color 0.2s ease-in-out;
+}
+main .menu-btn-main:hover {
+  cursor: pointer;
+  background-color: #ff7c08;
+  color: white;
+}
+main .menu-btn {
+  color: #ff7c08;
+  border: 1px solid #ff7c08;
+  transition: background-color, color 0.2s ease-in-out;
+}
+main .menu-btn:hover {
+  cursor: pointer;
+  background-color: #ff7c08;
+  color: white;
+}
+main .menu-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+  background: rgb(255, 124, 8);
+  background: linear-gradient(125deg, rgba(255, 124, 8, 0.1523459726) 0%, rgba(255, 255, 255, 0) 52%, rgba(255, 124, 5, 0.3344188017) 93%);
+}
+main .menu-txt-header {
+  transition: color 0.2s ease-in-out;
+}
+main .menu-txt-header:hover {
+  color: #ff7c08;
+  cursor: pointer;
+}
+main .cart-box:before {
+  content: "";
+  position: absolute;
+  background-color: #e06b04;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  bottom: 37px;
+  left: 0;
+  width: 18px;
+  height: 25px;
+  transition: background-color 0.2s ease-in-out;
+}
+main .cart-box:hover:before {
+  background-color: #231f40;
+}
+main .food-card {
+  border-radius: 10px;
+}
+main .category-box {
+  position: absolute;
+  background-color: #ff7c08;
+  color: white;
+  font-family: "Oleo Script", cursive;
+  padding: 3px 15px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  top: -15px;
+  right: 12px;
+  width: 100px;
+  transition: color 0.2s ease-in-out;
+}
+main .category-box:hover {
+  color: #231f40;
+  cursor: pointer;
+}
+main .cart-box {
+  position: absolute;
+  background-color: #ff7c08;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 6px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  bottom: 20px;
+  left: -5px;
+  width: 150px;
+  transition: background-color 0.2s ease-in-out;
+}
+main .cart-box:hover {
+  background-color: #231f40;
+  cursor: pointer;
+}
+main .card-wrap {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main .menu-icon {
+  color: #ff7c08;
+  border: 1px solid #ff7c08;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color, color 0.2s ease-in-out;
+}
+main .menu-icon:hover {
+  background-color: #ff7c08;
+  color: white;
+  cursor: pointer;
+}
+main .menu-card-txt {
+  padding: 1.25rem;
+}
+main .star-icon-wrap {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+main .star-icon {
+  color: #ff9933;
+}
+main del {
+  font-size: 18px;
+  font-weight: normal;
+}
+main .price {
+  color: #ff7c08;
+  font-family: "Barlow", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 1.25rem;
+}
+main .line-through {
+  color: gray;
+  font-size: 18px;
+}
+main .team-container {
+  background-color: #EEF6EB;
+}
+main .img-container-team {
+  border: 10px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 5;
+  position: relative;
+}
+main .img-container-team img {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #ff7c08;
+  transition: all 0.2s ease-in-out;
+}
+main .team-card-container:hover img {
+  transform: scale(1.03);
+}
+main .team-card {
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+main .team-card:hover {
+  transform: translateY(-5px);
+}
+main .team-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff7c08;
+  clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 100%, 0 25%);
+  width: 100%;
+  height: 30%;
+  z-index: 1;
+}
+main .team-card-container:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -25px;
+  opacity: 0.05;
+  background-image: url("https://html.themefax.com/regfood/images/chefs_shapes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85px;
+  height: 150px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+main .social-icon-team {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 124, 8, 0.1294117647);
+  color: #ff7c08;
+  transition: background-color 0.2s ease-in-out;
+}
+main .social-icon-team:hover {
+  background-color: #ff7c08;
+  color: white;
+  cursor: pointer;
+}
+main .bg-img-best-seller {
+  background-image: url("https://html.themefax.com/regfood/images/offer_slider_1.png");
+  border-radius: 10px;
+}
+main .bg-img-best-seller-2 {
+  background-image: url("https://html.themefax.com/regfood/images/offer_slider_2.png");
+  border-radius: 10px;
+}
+main .link-shop-now a {
+  color: #231f40;
+  font-weight: 600;
+  font-size: 17px;
+  transition: color 0.2s ease-in-out;
+}
+main .link-shop-now .fa-arrow-right {
+  background-color: transparent;
+  color: #231f40;
+  transition: color 0.2s ease-in-out;
+}
+main .link-shop-now:hover .fa-arrow-right {
+  color: #ff7c08;
+}
+main .link-shop-now:hover a {
+  color: #ff7c08;
+}
+main .gallery-bg-img {
+  background-image: url("https://html.themefax.com/regfood/images/download_img.png");
+  height: 100%;
+}
+main .bg-overlay {
+  background-color: rgba(35, 31, 64, 0.768627451);
+  height: 100%;
+  width: 100%;
+}
+main .app-icon {
+  font-size: 2rem;
+}
+main .app-button {
+  background-color: #ff7c08;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+main .app-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+main .no-p {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+main .feedback-card {
+  background-color: #231f40;
+  border-radius: 1.5rem;
+  color: white;
+  padding: 5rem 2rem 1.5rem 2rem;
+  position: relative;
+}
+main .feedback-card h4 {
+  font-family: Barlow, sans-serif;
+}
+main .feedback-card:before {
+  content: "";
+  position: absolute;
+  background-color: #ff7c08;
+  width: 50%;
+  height: 108%;
+  border-radius: 1.5rem;
+  top: -4%;
+  left: -3%;
+  z-index: -1;
+}
+main .feedback-card .feedback-img-container {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.25rem solid white;
+  border-radius: 50%;
+}
+main .feedback-card .feedback-img-container img {
+  border-radius: 50%;
+}
+main .bg-numbers {
+  background-image: url("https://html.themefax.com/regfood/images/counter_bg.jpg");
+}
+main .bg-numbers .number-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(35, 31, 64, 0.768627451);
+}
+main .bg-numbers .number-wrap .number {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+main .bg-numbers .number-wrap:before {
+  content: "";
+  background-image: url("https://html.themefax.com/regfood/images/counter_shapes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  left: -18px;
+  width: 235px;
+  height: 235px;
+  z-index: 1;
+  animation: rotating 60s linear infinite;
+}
+main .icon-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ff7c08;
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+main .news-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background: rgb(255, 124, 8);
+  background: linear-gradient(149deg, rgba(255, 124, 8, 0.4285247546) 0%, rgba(255, 124, 8, 0) 44%, rgba(255, 159, 0, 0.4173202728) 100%);
+}
+main .news-card {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+  transition: all 0.2s ease-in-out;
+}
+main .news-card:hover .img-bg img {
+  transform: scale(1.03);
+}
+main .news-card .img-bg img {
+  transition: all 0.2s ease-in-out;
+}
+main .news-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+main .news-card .img-bg {
+  border-radius: 0.5rem;
+}
+main .news-card .img-round {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 0.25rem solid white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+}
+main .news-card-tag {
+  background-color: #ff7c08;
+  font-family: "Oleo Script", cursive;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: -45px;
+  right: -10px;
+  z-index: 4;
+  transition: all 0.2s ease-in-out;
+}
+main .news-card-tag:hover {
+  color: #231f40;
+  cursor: pointer;
+}
+main .border-btm {
+  border-bottom: 1px solid #fad590;
+  padding-bottom: 1rem;
+}
+main .read-more a {
+  color: #231f40;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  transition: color 0.2s ease-in-out;
+}
+main .read-more .fa-arrow-right {
+  background-color: transparent;
+  color: #231f40;
+  transition: color 0.2s ease-in-out;
+}
+main .read-more:hover .fa-arrow-right {
+  color: #ff7c08;
+}
+main .read-more:hover a {
+  color: #ff7c08;
+}
+main .footer-bg {
+  background-image: url("https://html.themefax.com/regfood/images/footer_bg.jpg");
+}
+main .footer-logo {
+  height: 3rem;
+}
+main .border-btm-2 {
+  border-bottom: 1px solid #ff7c08;
+  padding-bottom: 0.25rem;
+}
+main .border-btm-3 {
+  border-bottom: 1px solid #ff7c08;
+  padding-bottom: 1rem;
+}
+main footer ul li {
+  margin-top: 1rem;
+}
+main footer ul li::before {
+  content: "■";
+  color: #ff7c08;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+main .overlay2 {
+  background-color: rgba(35, 31, 64, 0.8784313725);
+  width: calc(100% + 24px);
+  margin: 0 -12px;
+  overflow-x: hidden;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7c08;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: movingY 4s infinite;
+  border: 2px solid white;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 100;
+}
+.scroll-top:hover {
+  background-color: #231f40;
+}
+
+.fancy-animation {
+  transition: all 0.5s ease-in-out;
+}
+.fancy-animation img {
+  transition: all 0.5s ease-in-out;
+}
+.fancy-animation:hover {
+  transform: translateY(-5px);
+}
+.fancy-animation:hover img {
+  transform: scale(1.1);
+}
+
+.row--overflow-hidden {
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scaling {
+  0% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(16px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes movingY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 992px) {
+  .top-contacts:before {
+    display: none;
+  }
+  .gap-sm-md {
+    gap: 3rem;
+  }
+  header .bg-img1 .discount-circle {
+    right: 100px;
+    left: unset;
+  }
+  header .bg-img1 .overlay .hero-shape-4-md {
+    bottom: 40px;
+    left: 0;
+    top: unset;
+  }
+  header .bg-img1 .overlay .hero-shape-5-md {
+    bottom: 20px;
+    left: 100%;
+    top: unset;
+  }
+  header .bg-img1 .overlay .hero-shape-6-md {
+    bottom: 20px;
+    left: 100%;
+    top: unset;
+  }
+  .reservation-row:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(255, 124, 8, 0.9098039216);
+    clip-path: 0 0, 100% 0%, 100% 100%, 0% 100%;
+    z-index: 1;
+  }
+  .p0-md {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .reservation-row:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -1px;
+    background: rgba(255, 124, 8, 0.9098039216);
+    clip-path: polygon(53% 0, 100% 0%, 100% 100%, 38% 100%);
+    z-index: 1;
+  }
+}
+@media (max-width: 768px) {
+  header .bg-img1 .discount-circle {
+    left: 5rem;
+    transform: scale(0.8);
+  }
+  header {
+    height: auto;
+  }
+  header .bg-img1 {
+    height: auto;
+  }
+  header .bg-img1 .search-form .search-wrap {
+    border: none;
+  }
+  header .bg-img1 .search-form .search-wrap .search-input {
+    border: 1px solid #bbb;
+    margin-bottom: 0.75rem;
+  }
+  header .bg-img1 .search-form .search-button {
+    padding: 1rem 1.5rem;
+  }
+  .img-gallery-sm {
+    width: 100%;
+  }
+  .img-gallery-container {
+    display: flex;
+    height: 450px;
+    margin-top: 1rem;
+  }
+  .img-gallery-container img {
+    object-fit: cover;
+  }
+}
+@media (max-width: 576px) {
+  header .bg-img1 .discount-circle {
+    left: 2rem;
+    transform: scale(0.65);
+  }
+}
+@media (max-width: 420px) {
+  header .bg-img1 .discount-circle {
+    left: 0;
+    transform: scale(0.5);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
